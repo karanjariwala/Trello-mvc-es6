@@ -29,8 +29,8 @@ const addTodoFormView = () =>{
 
 const boardView = (cards)=>{
 
-    if(cards.length>0){return `<div>
-                <div class='lane' id='todo-lane'>
+    if(cards.length>0){return `<div style="display:flex; ">
+                <div style="height:100%; padding :10px; margin :10px" class='lane' id='todo-lane'>
                 <h2> ${lanes.TODO}</h2>
                     ${cards
                     .filter((card)=>card.lane===lanes.TODO)
@@ -42,7 +42,7 @@ const boardView = (cards)=>{
                                         <button class='move' id=${lanes.COMPLETE}>${lanes.COMPLETE}</button>
                                         </div>`)}
                     </div>
-                    <div class='lane' id='inprogress-lane'>
+                    <div style="height:100% ;padding :10px; margin :10px" class='lane' id='inprogress-lane'>
                     <h2> ${lanes.INPROGRESS}</h2>
                     ${cards
                     .filter((card)=>card.lane===lanes.INPROGRESS)
@@ -55,7 +55,7 @@ const boardView = (cards)=>{
                                        
                                         </div>`)}
                     </div>
-                    <div class='lane' id='complete-lane'>
+                    <div style="height:100%;padding :10px; margin :10px" class='lane' id='complete-lane'>
                     <h2> ${lanes.COMPLETE}</h2>
                     ${cards
                     .filter((card)=>card.lane===lanes.COMPLETE)
@@ -67,7 +67,7 @@ const boardView = (cards)=>{
                                         <button class='move' id=${lanes.TODO}>${lanes.TODO}</button>
                                         </div>`)}
                     </div>
-                    <div class='lane' id='hold-lane'>
+                    <div style="height:100%;padding :10px; margin :10px" class='lane' id='hold-lane'>
                     <h2> ${lanes.HOLD}</h2>
                     ${cards
                     .filter((card)=>card.lane===lanes.HOLD)
