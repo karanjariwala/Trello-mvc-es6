@@ -1,5 +1,6 @@
-# ES6-boilerplate
-Standard ES6 Boilerplate configured with babel, webpack and eslint.
+# Trello simple made using MVC in Vanilla JS 
+
+find demo here: https://karanjariwala.github.io/Trello-mvc-es6/
 
 ## Usage
 * `npm start` to run eslint on watch mode and dev-server at localhost:8080.
